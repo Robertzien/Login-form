@@ -1,0 +1,25 @@
+{
+  "name": "login-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robertzien/Login-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Robertzien/Login-form/issues"
+  },
+  "homepage": "https://github.com/Robertzien/Login-form#readme",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}
