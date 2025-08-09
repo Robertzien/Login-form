@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+NSW:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <img src="images/form-background.png" alt="" class="page-background">
     <div class="form">
@@ -20,39 +24,50 @@
         <div class="form__right">
             <div class="form__header">
                 <h1>Get started</h1>
-                <p>This is not a real online service! You know you need something like this in our life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br><br> You <em>know</em> you want to.</p>
+                <p>This is not a real online service! You know you need something like this in our life to help you
+                    realize your deepest dreams. Sign up <em>now</em> to get started. <br><br> You <em>know</em> you
+                    want to.</p>
             </div>
-            <div class="form__form">
-                <h2 class="form__form-header">
-                    Fill in the form below
-                </h2>
-                <div class="form__form-wrapper">
+            <form class="form__form-wrapper" action="#" method="POST">
+                <div class="form__form-columns">
                     <div class="form__form-column form__form-column--left">
-                        <input type="text" class="form__first-name" placeholder="First name">
-                        <input type="email" class="form__email" placeholder="E-mail"> 
-                        <input type="password" class="form__password" placeholder="Password">
+                        <input type="text" id="first-name" name="first_name" class="form__first-name"
+                            placeholder="First name" required autocomplete="given-name">
+
+                        <input type="email" id="email" name="email" class="form__email" placeholder="E-mail" required
+                            autocomplete="email">
+
+                        <input type="password" id="password" name="password" class="form__password"
+                            placeholder="Password" required minlength="8" autocomplete="new-password">
                     </div>
+
                     <div class="form__form-column form__form-column--right">
-                        <input type="text" class="form__last-name" placeholder="Last name">
-                        <input type="tel" class="form__phone" placeholder="Phone number">
-                        <input type="password" class="form__password-confirm" placeholder="Confirm password">
+                        <input type="text" id="last-name" name="last_name" class="form__last-name"
+                            placeholder="Last name" required autocomplete="family-name">
+
+                        <input type="tel" id="phone" name="phone" class="form__phone" placeholder="Phone number"
+                            pattern="[0-9+\-\s()]{8,}" autocomplete="tel">
+
+                        <input type="password" id="password-confirm" name="password_confirmation"
+                            class="form__password-confirm" placeholder="Confirm password" required minlength="8"
+                            autocomplete="new-password">
                     </div>
                 </div>
                 <div class="form__form-footer">
                     <div class="form__form-footer-btn">
-                        <a href="Create account">Create account</a>
+                        <button type="submit">Create account</button>
                     </div>
                     <div class="form__form-footer-text">
-                        <p>Already have an account? 
+                        <p>Already have an account?
                             <span>
                                 <a href="#">Log in</a>
                             </span>
                         </p>
                     </div>
                 </div>
-
-            </div>
+            </form>
         </div>
     </div>
 </body>
+
 </html>
